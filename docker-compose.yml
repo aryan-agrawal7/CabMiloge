@@ -31,3 +31,15 @@ services:
         volumes:
             - ./sqllite_volume:/app/sqllite_volume
         tty: true
+    telegram-bot:
+        build:
+            context: .
+            dockerfile: Dockerfile.telegram_bot
+        container_name: cabmiloge-telegram-bot
+        restart: always
+        volumes:
+            - ./sqllite_volume:/app/sqllite_volume
+        environment:
+            - TELEGRAM_BOT_TOKEN=7930956524:AAEUxigMRTX3tzLZXxz3J5UYKhyjHUj20Nk
+        depends_on:
+            - cabsharing

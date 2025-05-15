@@ -40,7 +40,8 @@ cursor.execute('''
         Uid TEXT PRIMARY KEY,
         Batch TEXT,
         Gender TEXT,
-        PhoneNo TEXT
+        PhoneNo TEXT,
+        TelegramID TEXT
     )
 ''')
 

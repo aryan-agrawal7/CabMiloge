@@ -40,6 +40,6 @@ services:
         volumes:
             - ./sqllite_volume:/app/sqllite_volume
         environment:
-            - TELEGRAM_BOT_TOKEN=7930956524:AAEUxigMRTX3tzLZXxz3J5UYKhyjHUj20Nk
+            - TELEGRAM_BOT_TOKEN=BOT_TOKEN
         depends_on:
             - cabsharing
